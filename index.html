@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="weather-container">
+            <h1 id="weather-title">Today's Weather</h1>
+            <div id="todays-date"></div>
+            <!-- Prompt user to input city -->
+            <input type="text" id="city" placeholder="Enter city...">
+            <button onclick="getWeather()">Search</button>
+
+            <button id="current-location-btn">Use Current Location</button>
+
+            <img id="weather-icon" alt="Weather Icon">
+
+            <div id="temp-div"></div>
+
+            <div id="weather-info"></div>
+
+            <div id="hourly-forecast"></div>
+            <!-- -->
+            <div id="extra-info" class="extra-info">
+                <div class="info-item">Feels Like: <span id="feels-like"></span>°F</div>
+                <div class="info-item">Humidity: <span id="humidity"></span>%</div>
+                <div class="info-item">Wind: <span id="wind"></span> mph</div>
+                <div class="info-item">Visibility: <span id="visibility"></span> mi</div>
+                <div class="info-item">Sunrise: <span id="sunrise"></span></div>
+                <div class="info-item">Sunset: <span id="sunset"></span></div>
+            </div>
+
+        </div>
+        <script src="./script.js"></script>
+    </body>
+
+    <footer>
+        <p>&copy; 2025 by Marilyn Gable | Data provided by OpenWeather API</p>
+    </footer>
+
+</html>
